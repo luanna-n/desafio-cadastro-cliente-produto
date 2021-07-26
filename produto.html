@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Novo Produto</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de Produtos</h1>
+    </header>
+
+    <main class="container">
+        <div id="dados">
+
+            <form id="main-form" action="#">
+
+                <div class="form-group">
+                    <label for="codigo" id="codigo-label">Código: </label>
+                    <input type="text" name="codigo" id="codigo" placeholder="Código" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="name" id="name-label">Nome: </label>
+                    <input type="text" name="name" id="name" placeholder="Nome do produto" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="marca" id="marca-label">Marca: </label>
+                    <input type="text" name="marca" id="marca-cpf" placeholder="Marca do produto" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="qtde-number" id="qtde-number-label">Quantidade: </label>
+                    <input type="text" name="qtde-number" id="qtde-tel" placeholder="Unidades" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="observacoes" id="observacoes-label">Observações: </label>
+                    <input type="text" name="observacoes" id="obs-end" placeholder="Outras informações" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="menor">Cód</th>
+                        <th class="meio">Nome</th>
+                        <th class="meio">Marca</th>
+                        <th class="menor">Qtde</th>
+                        <th class="maior">Observações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-items">
+    
+                </tbody>
+            </table>
+        </div>
+
+        <div class="botao-voltar">
+
+            <a href="index.html">
+                <div class="voltar">Voltar</div>
+            </a>            
+        </div>
+
+    </main>
+    
+</body>
+</html>
