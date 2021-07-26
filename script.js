@@ -3,7 +3,7 @@ const mainForm = document.getElementById('main-form');
 mainForm.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    // Adicionando o produto na tabela
+    //Adicionando linhas na tabela
 
     let codigo = document.getElementById('codigo').value;
     let nome = document.getElementById('name').value;
@@ -31,7 +31,7 @@ mainForm.addEventListener('submit', function(e) {
         td.append(valor);
     });
 
-    // Adicionando o produto no Local Storage
+    //Local Storage
 
     let info = JSON.parse(localStorage.getItem('informacao')) ?? [];
 
@@ -40,6 +40,4 @@ mainForm.addEventListener('submit', function(e) {
     let infoConvertida = JSON.stringify(info);
 
     localStorage.setItem('informacao', infoConvertida);
-
-    swal('Tudo certo!', 'Produto cadastrado com sucesso!', 'success');
 });
